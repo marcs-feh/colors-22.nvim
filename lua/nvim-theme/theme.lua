@@ -112,6 +112,9 @@ M.apply_theme = function(options)
 		{'@constant.builtin', { fg = c.literal_alt }},
 		{'@namespace', { fg = c.type_alt }},
 		{'@text.literal', { fg = c.fg }},
+
+		-- Language specific
+		{'markdownCodeDelimiter', { link = 'Comment' }},
 	}
 
 	-- Telescope
