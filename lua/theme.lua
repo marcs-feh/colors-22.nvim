@@ -110,7 +110,6 @@ M.apply_theme = function(options)
 		-- Treesitter
 		{'@constant.builtin', { fg = c.literal_alt }},
 		{'@namespace', { fg = c.type_alt }},
-
 	}
 
 	-- Telescope
