@@ -13,16 +13,16 @@ complexity.
 -- setup() for using the defaults
 
 require 'nvim-theme'.setup {
-	transparent        = true,
-	italic_comments    = false,
-	bright_cursor_line = false,
+  transparent        = true,
+  italic_comments    = false,
+  bright_cursor_line = false,
 
-	plugin_integrations = {
-		telescope = true,
-		mini_nvim = true,
-	},
+  plugin_integrations = {
+    telescope = true,
+    mini_nvim = true,
+  },
 
-	colors = { 
+  colors = { 
     -- Main colors
     bg        = '#1d2021',
     bg_alt    = '#303536',
