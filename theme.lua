@@ -101,11 +101,11 @@ M.apply_theme = function(options)
 		{'DiagnosticError', { fg = c.error }},
 		{'DiagnosticWarn', { fg = c.warn }},
 		{'DiagnosticHint', { fg = c.hint }},
-		{'DiagnosticInfo', { fg = c.fg_alt }},
+		{'DiagnosticInfo', { fg = c.info }},
 		{'DiagnosticUnderlineError', { fg = c.error, underline = true }},
 		{'DiagnosticUnderlineWarn', { fg = c.warn, underline = true }},
 		{'DiagnosticUnderlineHint', { fg = c.hint, underline = true }},
-		{'DiagnosticUnderlineInfo', { fg = c.fg_alt, underline = true }},
+		{'DiagnosticUnderlineInfo', { fg = c.info, underline = true }},
 
 		-- Treesitter
 		{'@constant.builtin', { fg = c.literal_alt }},

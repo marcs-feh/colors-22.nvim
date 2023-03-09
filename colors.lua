@@ -24,10 +24,10 @@ C = {
 	str_alt      = '#cdaf69',
 
 	-- Diagnostic
-	error = '#ff0000',
-	warn  = '#ffcc00',
-	hint  = '#aa11cc',
-	info  = '#dedede',
+	error = '#d83e33',
+	warn  = '#f2ba41',
+	hint  = '#cda1ac',
+	info  = '#c8889f',
 }
 
 return C
