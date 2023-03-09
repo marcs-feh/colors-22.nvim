@@ -141,6 +141,14 @@ M.apply_theme = function(options)
 			{'MiniStatuslineModeCommand', { bg = c.reserved_alt, fg = c.bg, bold = true }},
 			{'MiniStatuslineModeReplace', { bg = c.str_alt, fg = c.bg, bold = true }},
 			{'MiniStatuslineModeOther', { bg = c.bg_br_alt, fg = c.bg, bold = true }},
+
+			{'MiniTablineHidden', { fg = c.fg_alt, bg = c.bg }},
+			{'MiniTablineModifiedHidden', { fg = c.fg_alt, bg = c.bg, italic = true }},
+			{'MiniTablineCurrent', { fg = c.fg_alt, bg = c.bg_alt, bold = true }},
+			{'MiniTablineModifiedCurrent', { fg = c.fg_alt, bg = c.bg_alt, bold = true, italic = true }},
+			{'MiniTablineVisible', { link = 'MiniTablineHidden' }},
+			{'MiniTablineModifiedVisible', { link = 'MiniTablineModifiedHidden' }},
+			{'MiniTablineTabpagesection', { bg = c.fg, fg = c.bg, bold = true}},
 		}
 	end
 end
