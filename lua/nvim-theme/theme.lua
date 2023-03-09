@@ -57,12 +57,14 @@ M.apply_theme = function(options)
 		{'PmenuSel', { bg = c.fg_alt, fg = c.bg_alt, bold = true }},
 		{'PmenuSBar', { bg = c.bg_br, fg = c.fg_br }},
 		{'PmenuThumb', { bg = c.fg_br, fg = c.bg_br }},
+		{'WildMenu', { bg = c.bg_alt, fg = c.fg_alt }},
 		{'ColorColumn', { bg = c.bg_br }},
 		{'Folded', { bg = tr_bg, fg = c.bg_br_alt, italic = not options.italic_comments }},
 		{'FoldColumn', { bg = c.tr_bg, fg = c.bg_br_alt }},
 		{'Title', { fg = c.type, bold = true }},
 		{'Question', { fg = c.fg }},
 		{'NonText', { fg = c.type, bold = true }},
+		{'ErrorMsg', { fg = c.error }},
 		{'Tabline', { bg = c.bg_alt }},
 		{'TablineSel', { bg = c.bg_br, bold = true }},
 		{'TablineFill', { bg = c.tr_bg }},
@@ -109,6 +111,7 @@ M.apply_theme = function(options)
 		-- Treesitter
 		{'@constant.builtin', { fg = c.literal_alt }},
 		{'@namespace', { fg = c.type_alt }},
+		{'@text.literal', { fg = c.fg }},
 	}
 
 	-- Telescope
