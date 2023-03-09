@@ -1,6 +1,6 @@
 local M = {}
 
-local apply = require 'theme'.apply_theme
+local apply = require 'nvim-theme.theme'.apply_theme
 
 M.setup = function(opts)
 	apply(opts)

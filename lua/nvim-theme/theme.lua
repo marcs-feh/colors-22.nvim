@@ -1,9 +1,8 @@
 local M = {}
 
-local hi = require 'hi'.hi_set_pairs
-package.loaded['colors'] = nil -- DEBUG ONLY
+local hi = require 'nvim-theme.hi'.hi_set_pairs
 
-local def_colors = require 'colors'
+local def_colors = require 'nvim-theme.colors'
 
 local def_options = {
 	transparent        = true,
