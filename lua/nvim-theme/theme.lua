@@ -65,6 +65,7 @@ M.apply_theme = function(options)
 		{'Question', { fg = c.fg }},
 		{'NonText', { fg = c.type, bold = true }},
 		{'ErrorMsg', { fg = c.error }},
+		{'WarningMsg', { fg = c.warn }},
 		{'Tabline', { bg = c.bg_alt }},
 		{'TablineSel', { bg = c.bg_br, bold = true }},
 		{'TablineFill', { bg = c.tr_bg }},
