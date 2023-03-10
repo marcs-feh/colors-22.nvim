@@ -15,7 +15,7 @@ local def_options = {
 	},
 
 	colors = def_colors,
-	overrides = nil,
+	overrides = {},
 }
 
 M.apply_theme = function(options)
