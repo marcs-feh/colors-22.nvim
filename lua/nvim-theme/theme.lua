@@ -15,6 +15,7 @@ local def_options = {
 	},
 
 	colors = def_colors,
+	overrides = nil,
 }
 
 M.apply_theme = function(options)
@@ -156,6 +157,9 @@ M.apply_theme = function(options)
 			{'MiniTablineTabpagesection', { bg = c.fg, fg = c.bg, bold = true}},
 		}
 	end
+
+	-- Apply overrides
+	hi(options.overrides)
 end
 
 return M
