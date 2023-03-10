@@ -1,0 +1,201 @@
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Theme Demo</title>
+ </head>
+ <body>
+  <div class="main">
+   <h1>Main colors</h1>
+   <div class="split-2">
+    <div class="label-box">
+     <h2>Background</h2>
+     <div class="color-box-2">
+      <div class="sq light-text" id="bg"> bg </div>
+      <div class="sq light-text" id="bg-alt"> bg-alt </div>
+      <div class="sq light-text" id="bg-br"> bg-br </div>
+      <div class="sq light-text" id="bg-br-alt">bg-br-alt</div>
+     </div>
+    </div>
+    <div class="label-box">
+     <h2>Foreground</h2>
+     <div class="color-box-2">
+      <div class="sq dark-text" id="fg">fg</div>
+      <div class="sq dark-text" id="fg-alt">fg-alt</div>
+      <div class="sq dark-text" id="fg-br">fg-br</div>
+      <div class="sq dark-text" id="fg-br-alt">fg-br-alt</div>
+     </div>
+    </div>
+   </div>
+
+   <h1>Highlights</h1>
+
+   <div class="split-2">
+    <div class="label-box">
+     <h2>Functions</h2>
+     <div class="color-box-2">
+      <div class="sq dark-text" id="func">func</div>
+      <div class="sq dark-text" id="func-alt">func-alt</div>
+     </div>
+     <p>func: Regular functions/methods</p>
+     <p>func-alt: Built-in functions and/or macros</p>
+    </div>
+
+    <div class="label-box">
+     <h2>Types</h2>
+     <div class="color-box-2">
+      <div class="sq dark-text" id="type">type</div>
+      <div class="sq dark-text" id="type-alt">type-alt</div>
+     </div>
+     <p>type: Types such as primitives, structs, classes and enums</p>
+     <p>type-alt: Namespaces, constructors/destructors</p>
+    </div>
+   </div>
+
+   <div class="split-2">
+    <div class="label-box">
+     <h2>Literals</h2>
+     <div class="color-box-2">
+      <div class="sq dark-text" id="literal">literal</div>
+      <div class="sq dark-text" id="literal-alt">literal-alt</div>
+     </div>
+     <p>literal: Numeric, rune/char literals, symbols</p>
+     <p>literal-alt: Booleans, built-in consts</p>
+    </div>
+
+    <div class="label-box">
+     <h2>Strings</h2>
+<div class="color-box-2">
+      <div class="sq dark-text" id="str">str</div>
+      <div class="sq dark-text" id="str-alt">str-alt</div>
+     </div>
+     <p>str: String literals</p>
+     <p>str-alt: Escape sequences, raw strings</p>
+    </div>
+   </div>
+
+   <div class="split-2">
+    <div class="label-box">
+     <h2>Identifiers</h2>
+     <div class="color-box-2">
+      <div class="sq dark-text" id="id">id</div>
+      <div class="sq dark-text" id="id-alt">id-alt</div>
+     </div>
+     <p>id: Regular variables/identifiers</p>
+     <p>id-alt: Constants, enum members, SCREAMING_CASE</p>
+    </div>
+
+    <div class="label-box">
+     <h2>Reserved</h2>
+     <div class="color-box-2">
+      <div class="sq dark-text" id="reserved">reserved</div>
+      <div class="sq dark-text" id="reserved-alt">reserved-alt</div>
+     </div>
+     <p>reserved: Keywords</p>
+     <p>reserved-alt: Compiler directives and attributes, pre-processor</p>
+    </div>
+   </div>
+
+   <h1>Diagnostic</h1>
+   <div class="label-box">
+    <div class="color-box-4">
+     <div class="sq dark-text" id="error">error</div>
+     <div class="sq dark-text" id="warn">warn</div>
+     <div class="sq dark-text" id="info">info</div>
+     <div class="sq dark-text" id="hint">hint</div>
+    </div>
+    <p>error: Errors</p>
+    <p>warn: Warnings</p>
+    <p>info: Information and non-fatal warnings</p>
+    <p>hint: Hints and code actions </p>
+   </div>
+
+   <style>
+   body {
+    background-color: #1e1e1e;
+    color: #dedede;
+    font-family: monospace;
+   }
+
+   .main {
+    display: block;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top:   1rem;
+    width: clamp(400px, 90%, 1000px);
+   }
+
+   .color-box-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+   }
+
+   .color-box-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+   }
+
+   .split-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+
+   .label-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+    margin-right: 1rem;
+   }
+
+   .light-text {
+    color: #dedede;
+   }
+
+   .dark-text {
+    color: #1e1e1e;
+   }
+
+   .sq {
+    display: grid;
+    justify-items: center;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    margin: 0.2rem;
+   }
+
+   #bg           { background-color: #1d2021; }
+   #bg-alt       { background-color: #303536; }
+   #bg-br        { background-color: #434a4c; }
+   #bg-br-alt    { background-color: #606a6c; }
+
+   #fg-alt       { background-color: #eed89f; }
+   #fg           { background-color: #f4e5bf; }
+   #fg-br-alt    { background-color: #f9f1dc; }
+   #fg-br        { background-color: #fcf8ee; }
+
+   #type         { background-color: #81aece; }
+   #type-alt     { background-color: #7ec9b1; }
+
+   #reserved     { background-color: #cda2e3; }
+   #reserved-alt { background-color: #af91d5; }
+
+   #id           { background-color: #ebe3cb; }
+   #id-alt       { background-color: #e6b995; }
+
+   #literal      { background-color: #c4dc9b; }
+   #literal-alt  { background-color: #8ac87d; }
+
+   #func         { background-color: #ecdc8b; }
+   #func-alt     { background-color: #ecdc8b; }
+
+   #str          { background-color: #cd9169; }
+   #str-alt      { background-color: #cdaf69; }
+
+   #error        { background-color: #d83e33; }
+   #warn         { background-color: #f2ba41; }
+   #info         { background-color: #cda1ac; }
+   #hint     { background-color: #c8889f; }
+   </style>
+ </body>
+</html>
