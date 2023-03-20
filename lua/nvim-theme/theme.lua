@@ -65,6 +65,7 @@ M.apply_theme = function(options)
 		{'Title', { fg = c.type, bold = true }},
 		{'Question', { fg = c.fg }},
 		{'NonText', { fg = c.type, bold = true }},
+		{'MoreMsg', { fg = c.reserved_alt, bold = true }},
 		{'ErrorMsg', { fg = c.error }},
 		{'WarningMsg', { fg = c.warn }},
 		{'Tabline', { bg = c.bg_alt }},
