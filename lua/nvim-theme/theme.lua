@@ -67,6 +67,7 @@ M.apply_theme = function(options)
 		{'NonText', { fg = c.type, bold = true }},
 		{'MoreMsg', { fg = c.reserved_alt, bold = true }},
 		{'ErrorMsg', { fg = c.error }},
+		{'Todo', { fg = c.func, bold = true }},
 		{'WarningMsg', { fg = c.warn }},
 		{'Tabline', { bg = c.bg_alt }},
 		{'TablineSel', { bg = c.bg_br, bold = true }},
