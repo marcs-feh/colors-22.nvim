@@ -22,10 +22,10 @@ require 'nvim-theme'.setup {
     mini_nvim = true,
   },
 
-	overrides = {
+  overrides = {
     -- Example, override group "Pmenu" and make it blue
-		-- {'Pmenu', { bg = '#1e1e80', fg = '#d3d3d3'}}
-	},
+    -- {'Pmenu', { bg = '#1e1e80', fg = '#d3d3d3'}}
+  },
 
   -- You can just create your own theme by providing a colors table
   colors = { 
