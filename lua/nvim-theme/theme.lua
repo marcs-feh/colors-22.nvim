@@ -36,7 +36,6 @@ M.apply_theme = function(options)
 
 	vim.cmd [[ colorscheme default ]]
 
-	-- Neovim
 	hi {
 		-- Core highlight groups
 		{'Normal', { bg = tr_bg, fg = c.fg }},
