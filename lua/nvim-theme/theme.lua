@@ -161,6 +161,9 @@ M.apply_theme = function(options)
 
 	-- Apply overrides
 	hi(options.overrides)
+
+	-- Set global with current options
+	NvimThemeOptions = options
 end
 
 return M
