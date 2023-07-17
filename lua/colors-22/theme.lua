@@ -1,7 +1,7 @@
 local M = {}
 
 
-local def_colors = require 'nvim-theme.colors'
+local def_colors = require 'colors-22.colors'
 
 local def_options = {
 	transparent        = true,
@@ -36,7 +36,7 @@ M.apply_theme = function(options)
 
 	vim.cmd [[ colorscheme default ]]
 
-	local hi = require 'nvim-theme.hi'.hi_set_pairs
+	local hi = require 'colors-22.hi'.hi_set_pairs
 
 	hi {
 		-- Core highlight groups
