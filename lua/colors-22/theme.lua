@@ -84,7 +84,7 @@ M.apply_theme = function(options)
 
 		-- Syntax
 		{'String', { fg = c.str, ctermfg = tc.str }},
-		{'Comment', { fg = c.bg_br_alt, ctermfg = tc.type, italic = options.italic_comments }},
+		{'Comment', { fg = c.bg_br_alt, ctermfg = tc.bg_br_alt, italic = options.italic_comments }},
 		{'Special', nil },
 		{'Operator', nil },
 		{'Identifier', { fg = c.id, ctermfg = tc.id }},
