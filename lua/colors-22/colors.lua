@@ -34,8 +34,8 @@ C = {
 		-- Main colors
 		bg        = nil,
 		bg_alt    = 'black',
-		bg_br     = 'black',
-		bg_br_alt = 'black',
+		bg_br     = nil,
+		bg_br_alt = nil,
 		fg        = nil,
 		fg_alt    = 'white',
 		fg_br     = 'white',
@@ -43,17 +43,17 @@ C = {
 
 		-- Highlights
 		type         = 'blue',
-		type_alt     = 'blue',
-		reserved     = 'magenta',
-		reserved_alt = 'magenta',
+		type_alt     = 'cyan',
+		reserved     = 'yellow',
+		reserved_alt = 'yellow',
 		id           = 'white',
 		id_alt       = 'white',
-		literal      = 'green',
-		literal_alt  = 'green',
-		func         = 'yellow',
-		func_alt     = 'yellow',
-		str          = 'yellow',
-		str_alt      = 'yellow',
+		literal      = 'white',
+		literal_alt  = 'white',
+		func         = 'white',
+		func_alt     = 'white',
+		str          = 'green',
+		str_alt      = 'green',
 
 		-- Diagnostic
 		error = 'red',
