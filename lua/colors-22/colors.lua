@@ -42,7 +42,7 @@ C = {
 		fg_br_alt = 'white',
 
 		-- Highlights
-		type         = 'blue',
+		type         = 'cyan',
 		type_alt     = 'cyan',
 		reserved     = 'yellow',
 		reserved_alt = 'yellow',

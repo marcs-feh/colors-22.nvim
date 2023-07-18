@@ -43,7 +43,7 @@ M.apply_theme = function(options)
 		{'Normal', { bg = tr_bg, fg = c.fg, ctermfg = tc.fg }},
 		{'Italic', { italic = true }},
 		{'Bold', { bold = true }},
-		{'Visual', { fg = c.fg_br, ctermfg = tc.fg_br, bg = c.bg_br, ctermbg = tc.bg_br }},
+		{'Visual', { fg = c.fg_br, ctermfg = tc.fg_br, bg = c.bg_br, ctermbg = tc.str }},
 		{'LineNr', { fg = c.bg_br, ctermfg = tc.bg_br }},
 		{'SignColumn', { fg = c.fg_alt, ctermfg = tc.fg_alt }},
 		{'IncSearch', { bg = c.literal, ctermbg = tc.literal, fg = c.bg_alt, ctermfg = tc.bg_alt }},
