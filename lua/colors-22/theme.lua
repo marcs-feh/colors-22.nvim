@@ -117,6 +117,7 @@ M.apply_theme = function(options)
 		{'@constant.builtin', { fg = c.literal_alt, ctermfg = tc.literal_alt }},
 		{'@namespace', { fg = c.type_alt, ctermfg = tc.type_alt }},
 		{'@text.literal', { fg = c.fg, ctermfg = tc.fg }},
+		{'@attribute', { link = 'Type' }},
 
 		-- Language specific
 		{'markdownCodeDelimiter', { link = 'Comment' }},
