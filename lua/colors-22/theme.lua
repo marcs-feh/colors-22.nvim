@@ -98,6 +98,7 @@ M.apply_theme = function(options)
 		{'Conditional', { fg = c.reserved, ctermfg = tc.reserved }},
 		{'PreProc', { fg = c.reserved_alt, ctermfg = tc.reserved_alt }},
 		{'Statement', { fg = c.fg_alt, ctermfg = tc.fg_alt, bold = true }},
+		{'Exception', { link = 'Keyword' }},
 		{'SpellBad', { fg = c.hint, ctermfg = tc.hint, undercurl = true }},
 		{'SpellCap', { fg = c.fg, ctermfg = tc.fg, undercurl = true }},
 		{'SpellLocal', { fg = c.fg, ctermfg = tc.fg, italic = true, undercurl = true }},
