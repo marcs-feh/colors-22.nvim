@@ -103,6 +103,7 @@ M.apply_theme = function(options)
 		{'SpellCap', { fg = c.fg, ctermfg = tc.fg, undercurl = true }},
 		{'SpellLocal', { fg = c.fg, ctermfg = tc.fg, italic = true, undercurl = true }},
 		{'SpellRare', { fg = c.hint, ctermfg = tc.hint, undercurl = true }},
+		{'Label', { fg = c.func_alt }},
 
 		-- Diagnostic
 		{'DiagnosticError', { fg = c.error, ctermfg = tc.error }},
