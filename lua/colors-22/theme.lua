@@ -97,7 +97,7 @@ M.apply_theme = function(options)
 		{'Repeat', { fg = c.reserved, ctermfg = tc.reserved }},
 		{'Conditional', { fg = c.reserved, ctermfg = tc.reserved }},
 		{'PreProc', { fg = c.reserved_alt, ctermfg = tc.reserved_alt }},
-		{'Statement', { fg = c.fg_alt, ctermfg = tc.fg_alt, bold = true }},
+		{'Statement', { link = 'Normal' }},
 		{'Exception', { link = 'Keyword' }},
 		{'SpellBad', { fg = c.hint, ctermfg = tc.hint, undercurl = true }},
 		{'SpellCap', { fg = c.fg, ctermfg = tc.fg, undercurl = true }},
