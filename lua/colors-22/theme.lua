@@ -1,6 +1,5 @@
 local M = {}
 
-
 local def_colors = require 'colors-22.colors'
 
 local def_options = {
@@ -97,7 +96,7 @@ M.apply_theme = function(options)
 		{'Repeat', { fg = c.reserved, ctermfg = tc.reserved }},
 		{'Conditional', { fg = c.reserved, ctermfg = tc.reserved }},
 		{'PreProc', { fg = c.reserved_alt, ctermfg = tc.reserved_alt }},
-		{'Statement', { link = 'Normal' }},
+		{'Statement', { link = 'Keyword' }},
 		{'Exception', { link = 'Keyword' }},
 		{'SpellBad', { fg = c.hint, ctermfg = tc.hint, undercurl = true }},
 		{'SpellCap', { fg = c.fg, ctermfg = tc.fg, undercurl = true }},
