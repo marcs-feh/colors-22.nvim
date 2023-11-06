@@ -12,7 +12,8 @@ local def_options = {
 		mini_nvim = true,
 	},
 
-	colors = def_colors,
+	colors = def_colors.colors,
+	termcolors = def_colors.termcolors,
 	overrides = {},
 }
 
