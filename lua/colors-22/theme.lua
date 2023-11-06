@@ -25,8 +25,8 @@ M.apply_theme = function(options)
 		end
 	end
 
-	local c = options.colors.regular
-	local tc = options.colors.term
+	local c = options.colors
+	local tc = options.termcolors
 	local cursor_bg = options.bright_cursor_line and c.bg_alt or nil
 	local tr_bg     = nil
 	if not options.transparent then

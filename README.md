@@ -27,7 +27,8 @@ require 'nvim-theme'.setup {
     -- {'Pmenu', { bg = '#1e1e80', fg = '#d3d3d3'}}
   },
 
-  -- You can just create your own theme by providing a colors table
+  -- You can just create your own theme by providing a colors table, use
+  -- 'termcolors' for tty variant
   colors = {
     -- Main colors
     bg        = '#1d2021',
