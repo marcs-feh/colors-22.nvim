@@ -28,7 +28,7 @@ require 'nvim-theme'.setup {
   },
 
   -- You can just create your own theme by providing a colors table
-  colors = { 
+  colors = {
     -- Main colors
     bg        = '#1d2021',
     bg_alt    = '#303536',
