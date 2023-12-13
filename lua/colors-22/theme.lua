@@ -10,6 +10,7 @@ local def_options = {
 	plugin_integrations = {
 		telescope = true,
 		mini_nvim = true,
+		lazy = true,
 	},
 
 	colors = def_colors.colors,
@@ -81,6 +82,8 @@ M.apply_theme = function(options)
 		{'DiffText', { fg = c.reserved, ctermfg = tc.reserved }},
 		{'DiffChange', { fg = c.reserved_alt, ctermfg = tc.reserved_alt }},
 		{'DiffDelete', { fg = c.bg_alt, ctermfg = tc.bg_alt }},
+
+		{'NormalFloat', { link = 'Pmenu' }},
 
 		-- Syntax
 		{'String', { fg = c.str, ctermfg = tc.str }},
@@ -162,6 +165,12 @@ M.apply_theme = function(options)
 			{'MiniTablineVisible', { link = 'MiniTablineHidden' }},
 			{'MiniTablineModifiedVisible', { link = 'MiniTablineModifiedHidden' }},
 			{'MiniTablineTabpagesection', { bg = c.fg, ctermbg = tc.fg, fg = c.bg, ctermfg = tc.bg, bold = true}},
+		}
+	end
+
+	if options.plugin_integrations.lazy then
+		hi {
+			{'LazyNormal', { link = 'Normal' } },
 		}
 	end
 
