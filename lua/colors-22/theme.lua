@@ -119,6 +119,9 @@ M.apply_theme = function(options)
 		{'DiagnosticUnderlineHint', { fg = c.hint, ctermfg = tc.hint, underline = true }},
 		{'DiagnosticUnderlineInfo', { fg = c.info, ctermfg = tc.info, underline = true }},
 
+		-- LSP
+		{'QuickFixLine', { fg = c.type_alt, ctermfg = tc.type_alt }},
+
 		-- Treesitter
 		{'@constant.builtin', { fg = c.literal_alt, ctermfg = tc.literal_alt }},
 		{'@namespace', { fg = c.type_alt, ctermfg = tc.type_alt }},
