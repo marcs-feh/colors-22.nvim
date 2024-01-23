@@ -82,7 +82,6 @@ M.apply_theme = function(options)
 		{'DiffText', { fg = c.reserved, ctermfg = tc.reserved }},
 		{'DiffChange', { fg = c.reserved_alt, ctermfg = tc.reserved_alt }},
 		{'DiffDelete', { fg = c.bg_alt, ctermfg = tc.bg_alt }},
-
 		{'NormalFloat', { link = 'Pmenu' }},
 
 		-- Syntax
@@ -127,6 +126,7 @@ M.apply_theme = function(options)
 		{'@namespace', { fg = c.type_alt, ctermfg = tc.type_alt }},
 		{'@text.literal', { fg = c.fg, ctermfg = tc.fg }},
 		{'@attribute', { link = 'Type' }},
+		{'@module', { link = '@namespace' }},
 
 		-- Language specific
 		{'markdownCodeDelimiter', { link = 'Comment' }},
