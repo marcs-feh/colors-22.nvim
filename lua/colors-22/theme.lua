@@ -127,6 +127,7 @@ M.apply_theme = function(options)
 		{'@variable', { fg = c.id, ctermfg = tc.id }},
 		{'@text.literal', { fg = c.fg, ctermfg = tc.fg }},
 		{'@attribute', { link = 'Type' }},
+		{'@type.builtin', { link = 'Type' }},
 		{'@module', { link = '@namespace' }},
 
 		-- Language specific
